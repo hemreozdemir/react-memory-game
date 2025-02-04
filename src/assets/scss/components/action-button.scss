@@ -1,0 +1,16 @@
+.game-action-button {
+  padding: 0.5rem 0;
+  width: 13rem;
+  border-radius: 1rem;
+  background-color: white;
+  border: none;
+  box-shadow: 11px 11px 6px -7px rgba(0, 0, 0, 0.46);
+}
+
+.game-action-button:hover {
+  opacity: 0.8;
+}
+
+.game-action-button.green {
+  background-color: #88ec9c;
+}
