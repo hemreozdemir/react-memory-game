@@ -1,0 +1,160 @@
+.settings-wrapper {
+  padding-top: 5rem;
+}
+.adjust-settings-wrapper {
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+}
+.settings-header {
+  color: white;
+}
+
+.player-numbers-container {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.player-number-label {
+  color: white;
+  margin-bottom: 0.3rem;
+}
+
+.player-number-selection {
+  display: flex;
+  background-color: white;
+  width: fit-content;
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 12rem;
+  height: 100%;
+  column-gap: 0.2rem;
+}
+.player-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.player-number.is-active {
+  background-color: #484692;
+  color: white;
+}
+
+.grid-size-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.grid-size-label {
+  color: white;
+  margin-bottom: 0.3rem;
+}
+.grid-size-selection {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 12rem;
+  column-gap: 0.2rem;
+}
+.grid-size {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  height: 40px;
+}
+.grid-size.left {
+  border-top-left-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+}
+.grid-size.right {
+  border-top-right-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
+}
+
+.grid-size.is-active {
+  background-color: #484692;
+  color: white;
+}
+
+.round-time-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.round-time-label {
+  color: white;
+  margin-bottom: 0.3rem;
+}
+.round-time-selection {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 12rem;
+  column-gap: 0.2rem;
+}
+.round-time-button {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: #484692;
+}
+.round-time-button:hover {
+  opacity: 0.9;
+}
+.round-time-display {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.round-time-button.left {
+  border-top-left-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+}
+.round-time-button.right {
+  border-top-right-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
+}
+
+.round-time-input-icon {
+  height: 20px;
+}
+.round-time-input-icon.right {
+  transform: scaleX(-1);
+}
+
+.settings-action-buttons-wrapper {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.cancel-setting-button,
+.start-game-button {
+  width: 10rem;
+}

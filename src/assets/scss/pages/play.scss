@@ -1,0 +1,147 @@
+.play-game-wrapper {
+  background-color: #e8e4fc;
+}
+
+.players-info-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(
+    0deg,
+    rgb(136, 146, 242) 24%,
+    rgb(110, 104, 198) 77%
+  );
+}
+.player-container {
+  padding: 1rem;
+}
+.player-container.border-right {
+  border-right: 1px solid #484692;
+}
+.player-container.reversed {
+  flex-flow: row-reverse;
+}
+.player-container.passive-player {
+  opacity: 0.5;
+}
+.player-avatar-container {
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.2rem;
+}
+.player-avatar {
+  width: 100px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+.player-info {
+  margin: 0 1rem;
+  text-align: center;
+}
+.player-name {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.player-game-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.player-moves,
+.player-score {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0 1rem;
+}
+
+.board-row {
+  display: flex;
+  gap: 1rem;
+}
+.playground-container {
+  display: grid;
+  // grid-template-columns: repeat(6, auto);
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 3rem 2rem;
+}
+.image-card-container {
+  background-color: white;
+  border: 2px solid #484692;
+  border-radius: 16%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // aspect-ratio: 1/1;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+}
+.card-image {
+  // width: 100px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  height: 80% !important;
+  // margin: 0.8rem;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.game-card {
+  width: 100%;
+  height: 100%;
+  // aspect-ratio: 1/1;
+  // object-fit: cover;
+}
+
+.next-player-info {
+  display: none;
+  opacity: 0.5;
+}
+.next-player-header {
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .player-container-player-count-4 {
+    display: block;
+  }
+  .player-avatar-container {
+    width: min-content;
+    margin: auto;
+  }
+}
+
+@media (max-width: 792px) {
+  .player-container:not(.player-container-player-count-4) {
+    display: block;
+  }
+  .playground-container {
+    padding: 2rem 1rem;
+  }
+  .player-container {
+    // display: flex;
+  }
+  .player-container-player-count-4.passive-player {
+    display: none;
+  }
+  .player-container.reversed {
+    flex-flow: row;
+  }
+  .player-container.border-right {
+    border-right: none;
+  }
+  .player-container-player-count-4 .next-player-info {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .player-container-player-count-3 .next-player-info {
+    display: block;
+  }
+  .player-container-player-count-3.passive-player {
+    display: none;
+  }
+}

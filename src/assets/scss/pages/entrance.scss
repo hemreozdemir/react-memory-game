@@ -1,0 +1,18 @@
+.entrance-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.entrance-header {
+  color: white;
+}
+
+.entrance-action-buttons {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
